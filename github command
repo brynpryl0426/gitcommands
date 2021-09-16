@@ -1,0 +1,31 @@
+echo "# otvrms" >> README.md
+git init : inialize git
+ls -a : list
+git status : check status of repository
+
+
+git add . 
+git commit -m "project start"
+git log
+git remote add origin https://github.com/brynpryl0426/otvrms.git
+git push -u origin master
+
+#Repeating command
+git add . 
+git commit -m "project start"
+git push -u origin master
+
+
+…or create a new repository on the command line
+echo "# otvrms" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/brynpryl0426/otvrms.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/brynpryl0426/otvrms.git
+git branch -M main
+git push -u origin main

@@ -1,0 +1,34 @@
+1. sudo apt-get install python3-venv
+2. python3 -m venv env
+3. Ctrl+Shift+P :: Select interpreter
+4. python -m pip install django
+5. django-admin startproject web_project
+6. python manage.py startapp hello
+7. python manage.py runserver
+
+
+must inside the project
+extra commands
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+sudo /etc/init.d/apache2 stop
+
+
+sudo apt-get install python3-venv
+python3 -m venv env
+source "env/bin/activate"
+cd otvrms-master
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'OTVRS_DBase',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',   
+        'PORT': '3306',
+    }
